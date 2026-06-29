@@ -8,8 +8,9 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ CORS - Vercel frontend ko allow karo
 app.use(cors({
-  origin: [
+   origin: [
     process.env.FRONTEND_URL,
+    'https://leadflow-complete.vercel.app',
     'http://localhost:5173',
     'http://localhost:3000'
   ],
