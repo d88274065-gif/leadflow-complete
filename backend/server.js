@@ -31,7 +31,7 @@ const PRICE_IDS = {
 };
 
 // ✅ Checkout Session banao
-app.post('/api/create-checkout-session', async (req, res) => {
+app.post('/create-checkout-session', async (req, res) => {
   const { planId, orgId } = req.body;
 
   if (!planId || !PRICE_IDS[planId]) {
