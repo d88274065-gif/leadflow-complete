@@ -1,0 +1,13 @@
+{
+  "name": "TeamInvite",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "email": { "type": "string" },
+    "role": { "type": "string", "enum": ["sales_agent","manager","business_owner"] },
+    "status": { "type": "string", "enum": ["pending","accepted","revoked"] },
+    "invited_by": { "type": "string" },
+    "invited_by_name": { "type": "string" }
+  },
+  "required": ["org_id", "email", "role"]
+}

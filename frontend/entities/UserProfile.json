@@ -1,0 +1,13 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "org_name": { "type": "string" },
+    "full_name": { "type": "string" },
+    "email": { "type": "string" },
+    "role": { "type": "string", "enum": ["super_admin","business_owner","manager","sales_agent","admin","user"] },
+    "email_notifications": { "type": "boolean", "default": true }
+  },
+  "required": ["full_name", "email"]
+}

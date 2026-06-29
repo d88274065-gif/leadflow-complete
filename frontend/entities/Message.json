@@ -1,0 +1,14 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "lead_id": { "type": "string" },
+    "channel": { "type": "string", "enum": ["email","sms","call"] },
+    "subject": { "type": "string" },
+    "body": { "type": "string" },
+    "sent_by": { "type": "string" },
+    "sent_by_name": { "type": "string" }
+  },
+  "required": ["org_id", "subject"]
+}

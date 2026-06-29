@@ -1,0 +1,16 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "due_date": { "type": "string", "format": "date" },
+    "priority": { "type": "string", "enum": ["low","medium","high","urgent"] },
+    "status": { "type": "string", "enum": ["pending","in_progress","completed","cancelled"] },
+    "assigned_to": { "type": "string" },
+    "related_lead_id": { "type": "string" },
+    "related_deal_id": { "type": "string" }
+  },
+  "required": ["org_id", "title"]
+}

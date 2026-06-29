@@ -1,0 +1,16 @@
+{
+  "name": "Deal",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "title": { "type": "string" },
+    "company_name": { "type": "string" },
+    "contact_id": { "type": "string" },
+    "lead_id": { "type": "string" },
+    "value": { "type": "number" },
+    "stage": { "type": "string", "enum": ["qualification","proposal","negotiation","closed_won","closed_lost"] },
+    "expected_close_date": { "type": "string", "format": "date" },
+    "owner_id": { "type": "string" }
+  },
+  "required": ["org_id", "title"]
+}

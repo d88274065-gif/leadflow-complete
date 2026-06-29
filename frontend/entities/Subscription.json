@@ -1,0 +1,11 @@
+{
+  "name": "Subscription",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "plan": { "type": "string", "enum": ["starter","pro","enterprise"] },
+    "status": { "type": "string", "enum": ["active","canceled","past_due"] },
+    "current_period_end": { "type": "string", "format": "date" }
+  },
+  "required": ["org_id", "plan"]
+}

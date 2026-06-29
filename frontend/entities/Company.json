@@ -1,0 +1,13 @@
+{
+  "name": "Company",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "name": { "type": "string" },
+    "industry": { "type": "string" },
+    "website": { "type": "string" },
+    "size": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "required": ["org_id", "name"]
+}

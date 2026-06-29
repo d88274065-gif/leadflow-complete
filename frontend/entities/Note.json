@@ -1,0 +1,13 @@
+{
+  "name": "Note",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "entity_type": { "type": "string", "enum": ["lead","deal","contact","company"] },
+    "entity_id": { "type": "string" },
+    "content": { "type": "string" },
+    "created_by": { "type": "string" },
+    "created_by_name": { "type": "string" }
+  },
+  "required": ["org_id", "entity_type", "entity_id", "content"]
+}

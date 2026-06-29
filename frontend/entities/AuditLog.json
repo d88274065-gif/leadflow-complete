@@ -1,0 +1,12 @@
+{
+  "name": "AuditLog",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "user_id": { "type": "string" },
+    "user_name": { "type": "string" },
+    "action": { "type": "string" },
+    "target": { "type": "string" }
+  },
+  "required": ["org_id", "action"]
+}

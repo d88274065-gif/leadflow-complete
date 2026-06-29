@@ -1,0 +1,21 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "first_name": { "type": "string" },
+    "last_name": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "company_name": { "type": "string" },
+    "job_title": { "type": "string" },
+    "source": { "type": "string", "enum": ["website","referral","linkedin","cold_call","email_campaign","social_media","trade_show","advertisement","partner","other"] },
+    "status": { "type": "string", "enum": ["new","contacted","qualified","proposal_sent","negotiation","won","lost"] },
+    "priority": { "type": "string", "enum": ["low","medium","high","urgent"] },
+    "value": { "type": "number" },
+    "notes": { "type": "string" },
+    "ai_score": { "type": "number" },
+    "ai_summary": { "type": "string" }
+  },
+  "required": ["org_id", "first_name", "last_name"]
+}

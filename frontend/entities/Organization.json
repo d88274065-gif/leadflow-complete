@@ -1,0 +1,10 @@
+{
+  "name": "Organization",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "industry": { "type": "string" },
+    "owner_id": { "type": "string" }
+  },
+  "required": ["name"]
+}

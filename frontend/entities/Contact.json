@@ -1,0 +1,14 @@
+{
+  "name": "Contact",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "first_name": { "type": "string" },
+    "last_name": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "company_id": { "type": "string" },
+    "job_title": { "type": "string" }
+  },
+  "required": ["org_id", "first_name", "last_name"]
+}

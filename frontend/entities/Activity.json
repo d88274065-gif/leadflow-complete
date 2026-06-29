@@ -1,0 +1,14 @@
+{
+  "name": "Activity",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "type": { "type": "string", "enum": ["lead_created","status_change","deal_created","task_completed","note_added","email_sent"] },
+    "title": { "type": "string" },
+    "performed_by": { "type": "string" },
+    "performed_by_name": { "type": "string" },
+    "related_lead_id": { "type": "string" },
+    "related_deal_id": { "type": "string" }
+  },
+  "required": ["org_id", "type", "title"]
+}

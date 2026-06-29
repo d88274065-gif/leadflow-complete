@@ -1,0 +1,12 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "org_id": { "type": "string" },
+    "user_id": { "type": "string" },
+    "title": { "type": "string" },
+    "message": { "type": "string" },
+    "is_read": { "type": "boolean", "default": false }
+  },
+  "required": ["org_id", "title"]
+}
