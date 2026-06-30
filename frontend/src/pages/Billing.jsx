@@ -8,7 +8,7 @@ import { useToast } from '@/components/ui/use-toast';
 import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
-const BACKEND_URL = 'https://leadflow-ai-crmi-production.up.railway.app';
+const BACKEND_URL = 'https://leadflow-complete-production.up.railway.app';
 
 const plans = [
   { id: 'starter', name: 'Starter', price: 0, features: ['Up to 100 leads', '1 team member', 'Basic analytics'] },
@@ -157,4 +157,4 @@ export default function Billing() {
     </div>
   );
 }
-       
+
